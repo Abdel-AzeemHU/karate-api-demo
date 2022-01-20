@@ -5,8 +5,12 @@ function fn() {
     env = 'dev';
   }
   var config = {
-    env: env,
-    myVarName: 'someValue'
+    reqres: {
+      url: 'https://reqres.in'
+    },
+    jsonplaceholder: {
+      url: 'https://jsonplaceholder.typicode.com'
+    }
   }
   if (env == 'dev') {
     // customize
