@@ -8,7 +8,7 @@ on:
 jobs:
   maven-test:
     runs-on: ubuntu-latest
-    name: Run tests with maven and selenium
+    name: Run tests with Karate
 
     steps:
       - uses: actions/checkout@v2
