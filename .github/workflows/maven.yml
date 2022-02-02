@@ -22,12 +22,6 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
-      - name: list the running containers
-        run: docker ps
-
-      - name: call json server for test
-        run: curl localhost:8000/users
-
       - name: Run Tests with Maven
         run: mvn clean test
 
