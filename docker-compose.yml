@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  karate-test:
+    image: maven:3.8-openjdk-17
+    entrypoint: /app/entrypoint.sh
+    working_dir: /app
+    volumes:
+      - .:/app
+      - maven-repo:/root/.m2
+      - karate-report:/report
+
+  report:
+    image: httpd
+    depends_on:
+      - karate-test
+    ports:
+      - "8000:80"
+    volumes:
+      - karate-report:/usr/local/apache2/htdocs
+      - ./httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+
+  json-server:
+    image: ghcr.io/amado-saladino/json-server:v1
+    volumes:
+      - ./json-server:/data
+    ports:
+      - "8001:80"
+    environment:
+      - DB=users.json
+
+volumes:
+  maven-repo:
+  karate-report:
