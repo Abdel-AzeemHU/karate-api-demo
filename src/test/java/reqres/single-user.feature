@@ -25,4 +25,3 @@ Feature: Get a single user from the server
 		"avatar": "#? validateAvatar(randomUserId,_)"
 	}
     """
-    #  "avatar": "#regex ^https:\/\/reqres\\.in\/img\/faces\/\\d+-image.*(\\.jpg)$"
