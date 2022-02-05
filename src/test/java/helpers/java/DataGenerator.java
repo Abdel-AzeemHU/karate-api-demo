@@ -1,4 +1,4 @@
-package helpers.reqres.js;
+package helpers.java;
 
 import com.github.javafaker.Faker;
 import net.minidev.json.JSONObject;

@@ -1,8 +1,8 @@
 @reqres
 Feature: Check the data for a specific user and update it and check again
   Background:
-    * def createUserBody = read('classpath:helpers/reqres/js/createSingleUser.json')
-    * def dataGenerator = Java.type('helpers.reqres.js.DataGenerator')
+    * def createUserBody = read('classpath:helpers/jsonData/createSingleUser.json')
+    * def dataGenerator = Java.type('helpers.java.DataGenerator')
     * set createUserBody.name = dataGenerator.getRandomUserDetails().name;
     * set createUserBody.job = dataGenerator.getRandomUserDetails().job;
     * def validateAvatar = read('classpath:helpers/reqres/js/validateAvatar.js')

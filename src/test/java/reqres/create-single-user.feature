@@ -1,8 +1,8 @@
 @reqres
 Feature: Create a new user and get the user details after that
   Background:
-    * def createUserBody = read('classpath:helpers/reqres/js/createSingleUser.json')
-    * def dataGenerator = Java.type('helpers.reqres.js.DataGenerator')
+    * def createUserBody = read('classpath:helpers/jsonData/createSingleUser.json')
+    * def dataGenerator = Java.type('helpers.java.DataGenerator')
     * set createUserBody.name = dataGenerator.getRandomUserDetails().name;
     * set createUserBody.job = dataGenerator.getRandomUserDetails().job;
     * def validateAvatar = read('classpath:helpers/reqres/js/validateAvatar.js')
@@ -27,7 +27,6 @@ Feature: Create a new user and get the user details after that
     And match response.job == createUserBody.job
     * print response.id
     * def id = response.id
-
 
 #    This is not valid because maybe the id is bigger than 12
 #    Given path 'api', 'users', id
