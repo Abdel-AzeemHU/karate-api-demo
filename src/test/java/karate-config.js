@@ -9,7 +9,7 @@ function fn() {
       url: 'https://reqres.in'
     },
     jsonplaceholder: {
-      url: 'https://jsonplaceholder.typicode.com'
+      url: 'http://localhost:8000'
     }
   }
   if (env == 'dev') {
