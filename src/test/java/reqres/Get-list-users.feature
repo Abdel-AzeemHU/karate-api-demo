@@ -11,10 +11,6 @@ Feature: Get a list of users and validate every page
     And param page = randomPages
     When method get
     Then status 200
-#    * def isValidAvatar = validateAvatar(randomUserId, response.data.avatar)
-#    * print isValidAvatar
-#    And match isValidAvatar == true
-#    And match response.data.avatar == '#? isValidAvatar'
     And match each response.data ==
     """
     {
