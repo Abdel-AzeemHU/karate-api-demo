@@ -25,3 +25,10 @@ Feature: Get a single user from the server
 		"avatar": "#? validateAvatar(randomUserId,_)"
 	}
     """
+    
+  Scenario: Test json server
+    Given url 'http://localhost:8000/users'
+    When method get
+    Then status 200
+    And match response == "#array"
+    And match response[*].id contains [1, 2, 3]
