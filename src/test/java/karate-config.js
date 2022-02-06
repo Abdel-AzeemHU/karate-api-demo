@@ -9,7 +9,7 @@ function fn() {
       url: 'https://reqres.in'
     },
     jsonplaceholder: {
-      url: 'http://localhost:8080'
+      url: 'http://localhost:8000'
     }
   }
   if (env == 'dev') {
