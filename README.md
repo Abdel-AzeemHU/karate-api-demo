@@ -8,4 +8,28 @@ This is Test Automation demo for APIs by Karate DSL, Karate is the only open-sou
 - Using GitHub Actions to execute our tests.
 - Parallel execution.
 - Cucumber report.
-- Running with Docker container.
+- Running in container.
+
+## Compose
+
+Before running with `docker-compose` make sure `entrypoint.sh` is executable
+
+```shell
+chmod +x entrypoint.sh
+```
+
+Run with compose
+
+```shell
+docker-compose up -d
+```
+
+### Regression Test
+
+```shell
+docker-compose start karate-test
+```
+
+## Test Report
+
+Report will be available upon test run on `http://localhost:8000`
