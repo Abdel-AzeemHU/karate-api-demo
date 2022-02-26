@@ -16,7 +16,7 @@ function fn() {
     // customize
     // e.g. config.foo = 'bar';
   } else if (env == 'e2e') {
-    // customize
+    config.jsonplaceholder.url = 'http://json-server'
   }
   return config;
 }
