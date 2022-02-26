@@ -8,9 +8,7 @@ Feature: Get a list of users and validate every page
     Given path 'users'
     When method Get
     Then status 200
-    And match response[0].name == 'Leanne Graham'
     And match response == "#array"
-    And match response[*].id contains [1, 2, 3]
     And match each response[*] ==
     """
     {
