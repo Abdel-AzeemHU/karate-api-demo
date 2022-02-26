@@ -45,8 +45,3 @@ Feature: Check the data for a specific user and update it and check again
     """
     And match response.name == createUserBody.name
     And match response.job == createUserBody.job
-
-
-
-
-
