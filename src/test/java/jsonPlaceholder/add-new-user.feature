@@ -37,7 +37,7 @@ Feature: Add new user and assert on the new one
     And match response ==
     """
     {
-        "id": #(userId),
+        "id": "#number",
         "name": #(createNewUserBody.name),
         "username": #(createNewUserBody.username),
         "email": #(createNewUserBody.email),
