@@ -12,7 +12,7 @@
       Then status 200
       * def userCount = response.length
       * print 'user count: ' + userCount
-      * def randomUser = response[randomNumber(1, userCount)]
+      * def randomUser = response[randomNumber(0, userCount - 1)]
       * string user = randomUser
       * print user
       * print 'Random Id selected: ' + randomUser.id
