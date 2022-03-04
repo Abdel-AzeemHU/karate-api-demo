@@ -1,0 +1,2956 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @jsonPlaceholder</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Test Demo</td>
+      <td>04 Mar 2022, 19:41</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@jsonPlaceholder</td>
+          <td      class="passed"    >39</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">39</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="1706041078">1.706</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1470011029.html">src/test/java/jsonPlaceholder/delete-user.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3492419370.html">@jsonPlaceholder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.834</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">delete a random user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># get all users and select a random id</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.723</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:41:17.867 request:
+1 &gt; GET http://localhost:8000/users
+1 &gt; Host: localhost:8000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:17.946 response time in milliseconds: 60
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; Date: Fri, 04 Mar 2022 19:41:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Transfer-Encoding: chunked
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def userCount = response.length</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'user count: ' + userCount</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>19:41:17.963 [print] user count: 10 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomUser = response[randomNumber(0, userCount - 1)]</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string user = randomUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:41:17.981 [print] {&quot;id&quot;:2,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;suite&quot;:&quot;Suite 879&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;,&quot;geo&quot;:{&quot;lat&quot;:&quot;-43.9509&quot;,&quot;lng&quot;:&quot;-34.4618&quot;}},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;,&quot;catchPhrase&quot;:&quot;Proactive didactic contingency&quot;,&quot;bs&quot;:&quot;synergize scalable supply-chains&quot;}} 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Random Id selected: ' + randomUser.id</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:41:17.993 [print] Random Id selected: 2 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># delete the user</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users', randomUser.id</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>19:41:17.998 request:
+2 &gt; DELETE http://localhost:8000/users/2
+2 &gt; Host: localhost:8000
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:18.029 response time in milliseconds: 31
+2 &lt; 200
+2 &lt; X-Powered-By: Express
+2 &lt; Vary: Origin, Accept-Encoding
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; Cache-Control: no-cache
+2 &lt; Pragma: no-cache
+2 &lt; Expires: -1
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 2
+2 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+2 &lt; Date: Fri, 04 Mar 2022 19:41:18 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Keep-Alive: timeout=5
+{}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># get all users</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:41:18.031 request:
+3 &gt; GET http://localhost:8000/users
+3 &gt; Host: localhost:8000
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:18.038 response time in milliseconds: 6
+3 &lt; 200
+3 &lt; X-Powered-By: Express
+3 &lt; Vary: Origin, Accept-Encoding
+3 &lt; Access-Control-Allow-Credentials: true
+3 &lt; Cache-Control: no-cache
+3 &lt; Pragma: no-cache
+3 &lt; Expires: -1
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; ETag: W/&quot;13e0-eWNRQfu05M3qf02/2ikMwb0iWuQ&quot;
+3 &lt; Date: Fri, 04 Mar 2022 19:41:18 GMT
+3 &lt; Connection: keep-alive
+3 &lt; Keep-Alive: timeout=5
+3 &lt; Transfer-Encoding: chunked
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'user count: ' + response.length</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>19:41:18.071 [print] user count: 9 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert userCount - 1 == response.length</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_51424461.html">src/test/java/jsonPlaceholder/get-all-users.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3492419370.html">@jsonPlaceholder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.794</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Retrieve a random user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.746</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>19:41:17.869 request:
+1 &gt; GET http://localhost:8000/users
+1 &gt; Host: localhost:8000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:17.940 response time in milliseconds: 57
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; Date: Fri, 04 Mar 2022 19:41:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Transfer-Encoding: chunked
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == &quot;#array&quot;</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response[*] ==</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>{
+    &quot;id&quot;: &quot;#number&quot;,
+    &quot;name&quot;: &quot;#string&quot;,
+    &quot;username&quot;: &quot;#string&quot;,
+    &quot;email&quot;: &quot;#string&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;#string&quot;,
+        &quot;suite&quot;: &quot;#string&quot;,
+        &quot;city&quot;: &quot;#string&quot;,
+        &quot;zipcode&quot;: &quot;#string&quot;,
+        &quot;geo&quot;: {
+            &quot;lat&quot;: &quot;#string&quot;,
+            &quot;lng&quot;: &quot;#string&quot;
+        }
+    },
+    &quot;phone&quot;: &quot;#string&quot;,
+    &quot;website&quot;: &quot;#string&quot;,
+    &quot;company&quot;: {
+        &quot;name&quot;: &quot;#string&quot;,
+        &quot;catchPhrase&quot;: &quot;#string&quot;,
+        &quot;bs&quot;: &quot;#string&quot;
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3917966538.html">src/test/java/jsonPlaceholder/add-new-user.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3492419370.html">@jsonPlaceholder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.077</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all users to count the number of users</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>19:41:19.613 request:
+1 &gt; GET http://localhost:8000/users
+1 &gt; Host: localhost:8000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:19.620 response time in milliseconds: 6
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;13e0-eWNRQfu05M3qf02/2ikMwb0iWuQ&quot;
+1 &lt; Date: Fri, 04 Mar 2022 19:41:19 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Transfer-Encoding: chunked
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def userCount = response.length</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User count' + userCount</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>19:41:19.636 [print] User count9 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Create new user</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createNewUserBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>19:41:19.639 request:
+2 &gt; POST http://localhost:8000/users
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 378
+2 &gt; Host: localhost:8000
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Agustin&quot;,&quot;username&quot;:&quot;Devorah Weissnat&quot;,&quot;email&quot;:&quot;anja.tremblay@gmail.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Loyd Square&quot;,&quot;suite&quot;:&quot;Illinois&quot;,&quot;city&quot;:&quot;West Jerica&quot;,&quot;zipcode&quot;:&quot;54512&quot;,&quot;geo&quot;:{&quot;lat&quot;:&quot;-0.42608846&quot;,&quot;lng&quot;:&quot;116.27429&quot;}},&quot;phone&quot;:&quot;536.653.9603&quot;,&quot;website&quot;:&quot;funk.com&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Nicky&quot;,&quot;catchPhrase&quot;:&quot;Programmable stable throughput&quot;,&quot;bs&quot;:&quot;synergize customized e-business&quot;}}
+
+19:41:19.654 response time in milliseconds: 14
+2 &lt; 201
+2 &lt; X-Powered-By: Express
+2 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; Cache-Control: no-cache
+2 &lt; Pragma: no-cache
+2 &lt; Expires: -1
+2 &lt; Access-Control-Expose-Headers: Location
+2 &lt; Location: http://localhost:8000/users/11
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 494
+2 &lt; ETag: W/&quot;1ee-63FAVT9Cwt0Tdmi2KWjBHgmvZEY&quot;
+2 &lt; Date: Fri, 04 Mar 2022 19:41:19 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Keep-Alive: timeout=5
+{
+  &quot;name&quot;: &quot;Agustin&quot;,
+  &quot;username&quot;: &quot;Devorah Weissnat&quot;,
+  &quot;email&quot;: &quot;anja.tremblay@gmail.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Loyd Square&quot;,
+    &quot;suite&quot;: &quot;Illinois&quot;,
+    &quot;city&quot;: &quot;West Jerica&quot;,
+    &quot;zipcode&quot;: &quot;54512&quot;,
+    &quot;geo&quot;: {
+      &quot;lat&quot;: &quot;-0.42608846&quot;,
+      &quot;lng&quot;: &quot;116.27429&quot;
+    }
+  },
+  &quot;phone&quot;: &quot;536.653.9603&quot;,
+  &quot;website&quot;: &quot;funk.com&quot;,
+  &quot;company&quot;: {
+    &quot;name&quot;: &quot;Nicky&quot;,
+    &quot;catchPhrase&quot;: &quot;Programmable stable throughput&quot;,
+    &quot;bs&quot;: &quot;synergize customized e-business&quot;
+  },
+  &quot;id&quot;: 11
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = userCount + 1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>{
+    &quot;id&quot;: &quot;#number&quot;,
+    &quot;name&quot;: #(createNewUserBody.name),
+    &quot;username&quot;: #(createNewUserBody.username),
+    &quot;email&quot;: #(createNewUserBody.email),
+    &quot;address&quot;: {
+        &quot;street&quot;: #(createNewUserBody.address.street),
+        &quot;suite&quot;: #(createNewUserBody.address.suite),
+        &quot;city&quot;: #(createNewUserBody.address.city),
+        &quot;zipcode&quot;: #(createNewUserBody.address.zipcode),
+        &quot;geo&quot;: {
+            &quot;lat&quot;: #(createNewUserBody.address.geo.lat),
+            &quot;lng&quot;: #(createNewUserBody.address.geo.lng)
+        }
+    },
+    &quot;phone&quot;: #(createNewUserBody.phone),
+    &quot;website&quot;: #(createNewUserBody.website),
+    &quot;company&quot;: {
+        &quot;name&quot;: #(createNewUserBody.company.name),
+        &quot;catchPhrase&quot;: #(createNewUserBody.company.catchPhrase),
+        &quot;bs&quot;: #(createNewUserBody.company.bs)
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'New user Id ' + userId</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>19:41:19.669 [print] New user Id 10 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Get all users</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>19:41:19.672 request:
+3 &gt; GET http://localhost:8000/users
+3 &gt; Host: localhost:8000
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+19:41:19.679 response time in milliseconds: 6
+3 &lt; 200
+3 &lt; X-Powered-By: Express
+3 &lt; Vary: Origin, Accept-Encoding
+3 &lt; Access-Control-Allow-Credentials: true
+3 &lt; Cache-Control: no-cache
+3 &lt; Pragma: no-cache
+3 &lt; Expires: -1
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; ETag: W/&quot;15fe-rVrpRoqKCWlc7GHx6XGsQZzex3I&quot;
+3 &lt; Date: Fri, 04 Mar 2022 19:41:19 GMT
+3 &lt; Connection: keep-alive
+3 &lt; Keep-Alive: timeout=5
+3 &lt; Transfer-Encoding: chunked
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  },
+  {
+    &quot;name&quot;: &quot;Agustin&quot;,
+    &quot;username&quot;: &quot;Devorah Weissnat&quot;,
+    &quot;email&quot;: &quot;anja.tremblay@gmail.com&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Loyd Square&quot;,
+      &quot;suite&quot;: &quot;Illinois&quot;,
+      &quot;city&quot;: &quot;West Jerica&quot;,
+      &quot;zipcode&quot;: &quot;54512&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-0.42608846&quot;,
+        &quot;lng&quot;: &quot;116.27429&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;536.653.9603&quot;,
+    &quot;website&quot;: &quot;funk.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Nicky&quot;,
+      &quot;catchPhrase&quot;: &quot;Programmable stable throughput&quot;,
+      &quot;bs&quot;: &quot;synergize customized e-business&quot;
+    },
+    &quot;id&quot;: 11
+  }
+]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.length == userCount + 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User counts: ' + response.length</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>19:41:19.681 [print] User counts: 10 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
