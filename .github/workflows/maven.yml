@@ -47,12 +47,14 @@ jobs:
         run: cp index.html target/cucumber-html-reports/
 
       - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: always()
         with:
-          dir: target/cucumber-html-reports/
+          email: deploy@githubactions.net
+          build_dir: target/cucumber-html-reports/
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cucumber report
         if: always()
