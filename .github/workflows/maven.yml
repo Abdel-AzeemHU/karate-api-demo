@@ -42,6 +42,20 @@ jobs:
           reporter: java-junit
           fail-on-error: 'false'
 
+      - name: Copy index file to cucumber report dir
+        if: always()
+        run: cp index.html target/cucumber-html-reports/
+
+      - name: Publish generated content to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: always()
+        with:
+          email: deploy@githubactions.net
+          build_dir: target/cucumber-html-reports/
+          branch: gh-pages
+
       - name: Cucumber report
         if: always()
         uses: actions/upload-artifact@v2
