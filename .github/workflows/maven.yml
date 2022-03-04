@@ -47,7 +47,7 @@ jobs:
         run: cp index.html target/cucumber-html-reports/
 
       - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
         if: always()
         with:
           dir: target/cucumber-html-reports/
