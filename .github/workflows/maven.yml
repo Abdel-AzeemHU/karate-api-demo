@@ -52,7 +52,7 @@ jobs:
         with:
           dir: target/cucumber-html-reports/
           branch: gh-pages
-          token: ${{ github.token }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Cucumber report
         if: always()
