@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: src/test/java/reqres/create-single-user.feature</title>
+<title>Cucumber Reports  - Feature: src/test/java/reqres/single-user.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate Test Demo</td>
-      <td>11 Mar 2022, 11:46</td>
+      <td>07 May 2022, 08:02</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">src/test/java/reqres/create-single-user.feature</td>
-          <td      class="passed"    >16</td>
+          <td class="tagname">src/test/java/reqres/single-user.feature</td>
+          <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">16</td>
+          <td class="total">13</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1000592480">1.000</td>
+          <td class="duration" data-value="1773461745">1.773</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -175,12 +175,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">src/test/java/reqres/create-single-user.feature</span>
+  <span class="name">src/test/java/reqres/single-user.feature</span>
 
 
 </div>
 
-        <div class="description indention">Create a new user and get the user details after that</div>
+        <div class="description indention">Get a single user from the server</div>
 
         <div class="elements inner-level">
 
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.425</span>
+  <span class="lead-duration duration">0.057</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,9 +232,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def createUserBody = read('classpath:helpers/jsonData/createSingleUser.json')</span>
+  <span class="name">def randomNumber = read('classpath:helpers/js/random-number.js')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.048</span>
 
 </div>
 
@@ -252,7 +252,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:46:16.526 karate.env system property was: null 
+        <pre>08:02:41.949 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -270,63 +270,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.java.DataGenerator')</span>
+  <span class="name">def randomUserId = randomNumber(1, 12)</span>
 
   <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">set createUserBody.name = dataGenerator.getRandomUserDetails().name;</span>
-
-  <span class="lead-duration duration">0.249</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">set createUserBody.job = dataGenerator.getRandomUserDetails().job;</span>
-
-  <span class="lead-duration duration">0.171</span>
 
 </div>
 
@@ -353,7 +299,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def validateAvatar = read('classpath:helpers/reqres/js/validateAvatar.js')</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -420,14 +366,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.575</span>
+  <span class="lead-duration duration">1.716</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Create a new user</span>
+  <span class="name">Retrieve a random user</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -459,65 +405,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/reqres/js/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.064</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'api', 'users'</span>
+  <span class="name">path 'api', 'users', randomUserId</span>
 
-  <span class="lead-duration duration">0.013</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request createUserBody</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -542,9 +434,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">method Post</span>
+  <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.376</span>
+  <span class="lead-duration duration">1.396</span>
 
 </div>
 
@@ -562,34 +454,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>11:46:17.142 request:
-1 &gt; POST https://reqres.in/api/users
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 45
+        <pre>08:02:42.671 request:
+1 &gt; GET https://reqres.in/api/users/3
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Bud&quot;,&quot;job&quot;:&quot;Chief Quality Producer&quot;}
 
-11:46:17.404 response time in milliseconds: 261
-1 &lt; 201
-1 &lt; Date: Fri, 11 Mar 2022 11:46:17 GMT
+
+08:02:43.484 response time in milliseconds: 813
+1 &lt; 200
+1 &lt; Date: Sat, 07 May 2022 08:02:43 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 94
+1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Etag: W/&quot;5e-9PNJUmQ2Q9GENgK0Yx2Sz7f+v8Q&quot;
+1 &lt; Etag: W/&quot;112-EeInfgHWtnxhYRnwgZUB667e024&quot;
 1 &lt; Via: 1.1 vegur
-1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: REVALIDATED
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vdyW7mIszSyaxo9JUACxzoR0sj%2Ftp7BsFShgkGWdjoKxSqcp0lSwBpLIZ34fnyU0PMrySRon2%2BSvokGdrVlPBtsnyUHBjVNosTr9XkkryPMbIsO741qgDXpdFnk%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=8uXLs99TZpUwK%2F9oQdBKClyliaffykf3SP8xQcqwrVjPsVaTFd4P4XvGvRo%2FiM85V67vgpBi0UC72dP66h5ggSY%2B4x0fOpb5jBX2XePQ%2Flu7t2GTy07ZyzfQnR4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 6ea40c797a9e2c64-ORD
+1 &lt; CF-RAY: 70786f5c19fb0ec6-DFW
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;Bud&quot;,&quot;job&quot;:&quot;Chief Quality Producer&quot;,&quot;id&quot;:&quot;51&quot;,&quot;createdAt&quot;:&quot;2022-03-11T11:46:17.346Z&quot;}
+{&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;emma.wong@reqres.in&quot;,&quot;first_name&quot;:&quot;Emma&quot;,&quot;last_name&quot;:&quot;Wong&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/3-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
 </pre>
       </div>
     </div>
@@ -607,7 +499,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 201</span>
+  <span class="name">status 200</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -632,11 +524,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response ==</span>
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomUserId</span>
 
-  <span class="lead-duration duration">0.107</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -654,103 +546,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>{
-  &quot;name&quot;: &quot;#string&quot;,
-  &quot;job&quot;: &quot;#string&quot;,
-  &quot;id&quot;: &quot;#string&quot;,
-  &quot;createdAt&quot;: &quot;#? timeValidator(_)&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.name == createUserBody.name</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.job == createUserBody.job</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response.id</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>11:46:17.518 [print] 51 
+        <pre>08:02:43.486 [print] 3 
 </pre>
       </div>
     </div>
@@ -768,9 +564,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def id = response.id</span>
+  <span class="name">def isValidAvatar = validateAvatar(randomUserId, response.data.avatar)</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.265</span>
 
 </div>
 
@@ -782,6 +578,141 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print isValidAvatar</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>08:02:43.757 [print] true 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match isValidAvatar == true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.avatar == '#? isValidAvatar'</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data ==</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>{
+		&quot;id&quot;: #(randomUserId),
+		&quot;email&quot;: &quot;#regex ^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$&quot;,
+		&quot;first_name&quot;: &quot;#string&quot;,
+		&quot;last_name&quot;: &quot;#string&quot;,
+		&quot;avatar&quot;: &quot;#? validateAvatar(randomUserId,_)&quot;
+	}</pre>
+      </div>
+    </div>
+  </div>
 
 
 
